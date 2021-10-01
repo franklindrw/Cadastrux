@@ -1,2 +1,2 @@
 # Cadastrux
- Programa desenvolvido para o Projeto Integrador Web Services da faculdade Eniac
+ Programa desenvolvido para o Projeto Integrador Web Services para a faculdade Eniac
