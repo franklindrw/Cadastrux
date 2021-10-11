@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body{
+    overflow: hidden;
+}
 .menu{
     background-color: #FD5E53;
+    padding-bottom: -1vh;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -16,6 +21,8 @@ h1{
     flex-direction: column;
     align-items:center;
     width: 50%;
+    padding-top: 15%;
+    padding-bottom:35%;
 }
 
 #formLogin{
@@ -23,6 +30,7 @@ h1{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    padding-top: 60px;
 }
 
 input[type="text"],[type="password"], [type="submit"]{
@@ -53,7 +61,19 @@ textarea:focus, input:focus, select:focus {
 
 img{
     display: block;
+    position: absolute;
     width: 50%;
-    padding-left: 50%;
-    margin-top: 0;
+    margin-left: 50%;
+    margin-top: -70%;
+}
+
+@media (max-width: 819px){
+
+    .menu{
+        width: 100%;
+    }
+
+    img{
+        width: 0%;
+    }
 }

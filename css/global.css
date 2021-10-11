@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&family=Quicksand&display=swap');
+
+.container-vermelho{
+    background-color: #FD5E53;
+}
+
+.btnVoltar{
+    color: #fff;
+    background-color: #21BF73;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding: 12px 20px;
+    cursor: pointer;
+
+}
+
+.btnVoltar:hover{
+    box-shadow: 0 0 40px 40px #18a862 inset;
+    border: none;
+}
+
+.logoCadastrux{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+#titleWhite{
+    font-family: 'Nunito',sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 50px 0;
+    text-transform: uppercase;    
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}

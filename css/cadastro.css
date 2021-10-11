@@ -1,0 +1,40 @@
+#gridCadastro{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 50px;
+}
+
+.formulario, .campoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campoForm{
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+input[type="text"],[type="password"], [type="submit"]{
+    width: 200%;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    background-color: #21BF73;
+    color: #fff;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0 0 40px 40px #18a862 inset;
+    border: none;
+}
+
