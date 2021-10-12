@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/produtoStyles.css">
+    <title>Cadastrux | Cadastrar</title>
+</head>
+
+<body class="container-vermelho">
+
+    <header id="gridCadastro">
+        <div class="box box-1"><a href="../pages/menu.html"><button class="btnVoltar">Voltar</button></a></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"><h1 class="logoCadastrux">Cadastrux</h1></div>
+    </header>
+
+    <main>
+
+        <div id="titleWhite"><h1>Cadastro de Produto</h1></div>
+
+        <form method="post" action="#"  id="formNewProduct" name="formNewProduct"></form>
+
+            <div class="form-produto">
+
+                <div class="box box-1">
+                    <input class="campo-m" type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome do Produto">
+                    <textarea class="campo-g" type="text" name="descProduto" id="descProduto" rows="10" placeholder="Descrição"></textarea>
+                    <input class="campo-m" type="number" name="precoProduto" id="precoProduto" placeholder="Preço R$">
+                </div>
+
+                <div class="box box-2">
+                    <label id="boxImagem" for="uploadImagem">
+                        <div class="imgIcon"><img src="../image/photoIcon.png" /></div>
+
+                        <div class="textoImagem">Clique aqui para Selecionar o arquivo</div>
+
+                        <div class="legenda">
+                            Regras para o Arquivo: <br />
+                            Dimensões 1000px de altura e largura <br/>
+                            Formatos aceitos: JPG ou PNG
+                        </div>
+
+                        <div >
+                            <img class="imagemInserida" id="preview" src="">
+                        </div>
+                    </label>
+
+                    
+
+                    <input type="file" name="arquivos" id="uploadImagem"  accept="image/png, image/jpeg" />
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="btnSalvar" id="btnSalvar"><input type="submit" class="btnVoltar" value="Salvar"></div>
+            </div>
+
+        </form>
+    </main>
+
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

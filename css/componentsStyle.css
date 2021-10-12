@@ -48,7 +48,7 @@
 }
 
 .btnSearch{
-padding: 6.5px 15px 9.5px 10px;
+padding: 6px 15px 9px 9px;
 margin-left: -5px;
 width: auto;
 background-color: #21BF73;
@@ -65,4 +65,9 @@ cursor: pointer;
     padding-top: 80px;
     margin: auto;
     width: 80%;
+}
+
+.btnEdit:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
 }

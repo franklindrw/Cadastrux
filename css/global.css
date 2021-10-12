@@ -4,6 +4,12 @@
     background-color: #FD5E53;
 }
 
+#gridCadastro{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 50px;
+}
+
 .btnVoltar{
     color: #fff;
     background-color: #21BF73;

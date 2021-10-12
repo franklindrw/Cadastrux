@@ -1,8 +1,3 @@
-#gridCadastro{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    padding: 50px;
-}
 
 .formulario, .campoForm{
     display: flex;
@@ -22,7 +17,7 @@ input[type="text"],[type="password"], [type="submit"]{
     text-align: center;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: text;
 }
 
 input[type="submit"]{
@@ -31,6 +26,7 @@ input[type="submit"]{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover{
