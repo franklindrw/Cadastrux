@@ -1,0 +1,68 @@
+.btnNovo{
+    display: inline;
+    float: right;
+    padding: 50px;
+
+}
+
+.titleUser {
+    padding: 120px 0  0 120px;
+    color: #21BF73;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.regua{
+    display: block;
+    padding-left: 10px;
+    margin: 10px auto;
+    width: 80%;
+    height: 2px;
+    background-color: #21BF73;
+}
+
+.form-pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.searchText{
+    padding: 8px 20px;
+    width: 300px;
+    border-radius: 25px 0 0 25px;
+    border-color: #21BF73;
+    border-width: 1px;
+    border-style: solid;
+
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+}
+
+.btnSearch > img{
+    width: 14px;
+}
+
+.btnSearch{
+padding: 6.5px 15px 9.5px 10px;
+margin-left: -5px;
+width: auto;
+background-color: #21BF73;
+border: none;
+border-radius: 0 25px 25px 0;
+cursor: pointer;
+}
+
+.btnSearch:hover{
+    background-color: #18A862;
+}
+
+.tabelaPrincipal{
+    padding-top: 80px;
+    margin: auto;
+    width: 80%;
+}
