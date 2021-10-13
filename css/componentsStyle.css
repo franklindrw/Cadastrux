@@ -57,7 +57,7 @@ border-radius: 0 25px 25px 0;
 cursor: pointer;
 }
 
-.btnSearch:hover{
+.btnSearch:hover, #salvarSenha:hover{
     background-color: #18A862;
 }
 
@@ -67,7 +67,71 @@ cursor: pointer;
     width: 80%;
 }
 
+#btnEdit{
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
 .btnEdit:hover{
+    background-color: none;
     -webkit-transform: scale(1.1);
     transform: scale(1.2);
+}
+
+.novaSenha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.novaSenha > .campo-m{
+    width: 65%;
+    padding: 10px 15px;
+    margin: 15px 0;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #CACACA;
+    border-radius: 25px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+}
+
+.acoes{
+    padding: 25px 100px;
+}
+
+#btnDelete{
+    background-color: #FD5E53;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 25px;
+}
+
+#btnDelete:hover{
+    background-color: #970a00;
+}
+
+#ActiveUser{
+    display: inline;
+    float: right;
+}
+
+#salvarSenha{
+    display: inline;
+    float: right;
+    padding: 6px 25px;
+    margin: 0 10px 10px 0;
+
+    border: none;
+    border-radius: 25px;
+    background-color: #21BF73;
+
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .85rem;
 }
