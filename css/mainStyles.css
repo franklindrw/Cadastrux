@@ -40,7 +40,7 @@ input[type="text"],[type="password"], [type="submit"]{
     border-radius: 30px;
     margin: 15px 0;
     width: 60%;
-    cursor: pointer;
+    cursor: text;
 }
 
 input[type="submit"]{
