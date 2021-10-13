@@ -46,6 +46,7 @@ input[type="text"],[type="password"], [type="submit"]{
 input[type="submit"]{
     background-color: #21BF73;
     color: #fff;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover{
