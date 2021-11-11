@@ -1,5 +1,5 @@
 
-<div class="btnNovo"><a href="../pages/cadastro.html"><button class="btnVoltar">Novo</button></a></div>
+<div class="btnNovo"><a href="../pages/cadastro.php"><button class="btnVoltar">Novo</button></a></div>
 <div class="titleUser"><h3>Usuários</h3></div>
 <span class="regua"></span>
 
@@ -21,26 +21,29 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td colspan="2">Mark Otto</td>
-            <td>Sim</td>
-            <td><button type="button" id="btnEdit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="btnEdit" style="width: 18px;" src="../image/round_mode_edit_black_24dp.png" /></td></button>
-        </tr>
-        <tr>
-            <td colspan="2">Jacob Thornton</td>
-            <td>Sim</td>
-            <td><button type="button" id="btnEdit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="btnEdit" style="width: 18px;" src="../image/round_mode_edit_black_24dp.png" /></td></button>
-        </tr>
-        <tr>
-            <td colspan="2">Larry the Bird</td>
-            <td>Sim</td>
-            <td><button type="button" id="btnEdit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="btnEdit" style="width: 18px;" src="../image/round_mode_edit_black_24dp.png" /></td></button>
-        </tr>
-        <tr>
-            <td colspan="2">Renata Lira</td>
-            <td>Não</td>
-            <td><button type="button" id="btnEdit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="btnEdit" style="width: 18px;" src="../image/round_mode_edit_black_24dp.png" /></td></button>
-        </tr>
+            <?php
+
+            $url = 'http://127.0.0.1:5000/usuarios';
+            $resultado = json_decode(file_get_contents($url), true);
+
+                foreach($resultado['usuarios'] as $listaUsuarios) {
+
+                    if($listaUsuarios['status'] === 'False') {
+                        $convert = ($listaUsuarios['status']) ? 'Não' : 'Falso';
+                    } 
+                    else {
+                        $convert = ($listaUsuarios['status']) ? 'Sim' : 'Verdadeiro';
+                    }
+        
+                    echo "<tr>";
+                        echo "<td colspan='2'>$listaUsuarios[usuario]</td>";
+                        echo "<td>$convert</td>";
+                        echo "<td><button type='button' id='btnEdit' data-bs-toggle='modal' data-bs-target='#staticBackdrop'><img class='btnEdit' style='width: 18px;' src='../image/round_mode_edit_black_24dp.png' /></td></button>";
+                    echo "</tr>";
+                }
+
+            ?>
+        
         </tbody>
     </table>
 </div>

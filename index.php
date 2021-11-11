@@ -8,7 +8,7 @@
         //caso o link receba erro=true do login.php, envia um alert de erro
         if(isset($_GET['erro'])){
             echo  "<script type='text/javascript'>
-                        alert('Erro teste');
+                        alert('Usuário ou senha inválido. Por favor, verificar!!');
                    </script>";
         }
     ?>

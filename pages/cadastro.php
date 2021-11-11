@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <?php
+        session_start();
+
+        //caso o link receba sucess=true do cadastro_usuario.php, envia um alert de sucesso
+        if(isset($_GET['sucess'])){
+            echo  "<script type='text/javascript'>
+                        alert('Usuário cadastrado com sucesso!!');
+                   </script>";
+        }
+
+        //caso o link receba erro=true do login.php, envia um alert de erro
+        if(isset($_GET['erro'])){
+            echo  "<script type='text/javascript'>
+                        alert('Senha e confirmação de senha diferentes!!');
+                   </script>";
+        }
+    ?>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +38,7 @@
     <main>
         <div class="formulario">
             <h2 id="titleWhite">Criar Usuário</h2>
-            <form method="post" action="#"  id="formNewUser" name="formNewUser">
+            <form method="post" action="../models/cadastro_usuario.php"  id="formNewUser" name="formNewUser">
                 <div class="campoForm"><input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário"></div>
                 <div class="campoForm"><input type="text" name="senhaUsuario" id="senhaUsuario" placeholder="Digite a Senha"></div>
                 <div class="campoForm"><input type="text" name="confimarSenha" id="confirmarSenha" placeholder="Confirmar senha"></div>
