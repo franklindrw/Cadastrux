@@ -53,25 +53,30 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Mudar Senha</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Mudar Senha / Excluir usuário</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="novaSenha">
-            <input class="campo-m" type="password" name="novaSenha" id="nomeProduto" placeholder="Digite a Nova Senha">
-            <input class="campo-m" type="password" name="confirmSenha" id="nomeProduto" placeholder="Confirme sua senha">
-        </div>
-
+            <form method="post" action="../models/altera_exclui_usuario.php">
+            <div class="novaSenha">
+                <input class="campo-m" type="text" name="confirmUsuario" id="nomeProduto" placeholder="Confirme o nome do usuário">
+                <input class="campo-m" type="password" name="senhaAtual" id="nomeProduto" placeholder="Digite a senha atual">
+                <input class="campo-m" type="password" name="novaSenha" id="nomeProduto" placeholder="Digite a nova senha (Somente alteração)">
+                <input class="campo-m" type="password" name="confirmSenha" id="nomeProduto" placeholder="Repita a nova senha (Somente alteração)">
+                <div class="salvarSenha">
+                <button type="submit" class="btnDelete" id="btnDelete"><img class="deleteIcon" src="../image/deleteIcon.png" /></button>
+                <button type="submit" id="salvarSenha">Salvar</button>
+                </div>
+            </div>
+            </form>
         <div class="acoes">
-            <button type="button" class="btnDelete" id="btnDelete"><img class="deleteIcon" src="../image/deleteIcon.png" /></button>
+            
 
             <div class="form-check form-switch" id="ActiveUser">
                 <label class="form-check-label" for="UserAtivo">Ativo</label>
                 <input class="form-check-input" type="checkbox" role="switch" id="UserAtivo">
             </div>
         </div>
-        <div class="salvarSenha">
-          <button type="button" id="salvarSenha">Salvar</button>
-        </div>
+        
       </div>
     </div>
   </div>

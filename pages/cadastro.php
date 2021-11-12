@@ -15,7 +15,7 @@
         //caso o link receba erro=true do login.php, envia um alert de erro
         if(isset($_GET['erro'])){
             echo  "<script type='text/javascript'>
-                        alert('Senha e confirmação de senha diferentes!!');
+                        alert('Dados incoerentes. Favor verificar!!!');
                    </script>";
         }
     ?>
@@ -40,8 +40,8 @@
             <h2 id="titleWhite">Criar Usuário</h2>
             <form method="post" action="../models/cadastro_usuario.php"  id="formNewUser" name="formNewUser">
                 <div class="campoForm"><input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário"></div>
-                <div class="campoForm"><input type="text" name="senhaUsuario" id="senhaUsuario" placeholder="Digite a Senha"></div>
-                <div class="campoForm"><input type="text" name="confimarSenha" id="confirmarSenha" placeholder="Confirmar senha"></div>
+                <div class="campoForm"><input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Digite a Senha"></div>
+                <div class="campoForm"><input type="password" name="confimarSenha" id="confirmarSenha" placeholder="Confirmar senha"></div>
                 <div class="campoForm" id="btnSalvar"><input type="submit" value="Salvar"></div>
             </form>
         </div>

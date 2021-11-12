@@ -7,7 +7,7 @@
     $resultado = json_decode(file_get_contents($url), true);
 
     if(!empty($resultado)) {
-        header('Location: ../pages/menu.html');
+        header('Location: ../pages/menu.php');
     }
     else {
         unset ($_SESSION ['usuario']);

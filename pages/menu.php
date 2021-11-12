@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<?php
+        session_start();
+
+        //caso o link receba sucess=true do altera_exclui_usuario.php, envia um alert de sucesso
+        if(isset($_GET['sucess'])){
+            echo  "<script type='text/javascript'>
+                        alert('Senha alterada com sucesso!!');
+                   </script>";
+        }
+
+        //caso o link receba erro=true do altera_exclui_usuario.php, envia um alert de erro
+        if(isset($_GET['erro'])){
+            echo  "<script type='text/javascript'>
+                        alert('Dados incoerentes. Favor verificar!!!');
+                   </script>";
+        }
+
+        //caso o link receba delete=true do altera_exclui_usuario.php, envia um alert de sucesso
+        if(isset($_GET['delete'])){
+            echo  "<script type='text/javascript'>
+                        alert('Usuário deletado!!!');
+                   </script>";
+        }
+    ?>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
